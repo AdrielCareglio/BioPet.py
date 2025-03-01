@@ -1,0 +1,1 @@
+cat_input = input("Which of the cats will you try it out with? Type H for Hecate or R for Ragnar and press 'Enter'")

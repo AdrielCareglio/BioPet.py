@@ -1,0 +1,232 @@
+[33mcommit 08c9170caba586ee0885e0799e76f06c9a12e70b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: AdrielCareglio <adrielcaregliodev@gmail.com>
+Date:   Sat Mar 1 22:31:25 2025 +0100
+
+    Feature: finished branch
+
+ .idea/inspectionProfiles/profiles_settings.xml     |   6 [32m++[m
+ .idea/misc.xml                                     |   7 [32m+++[m
+ .idea/vcs.xml                                      |   6 [32m++[m
+ .idea/workspace.xml                                |  59 [32m+++++++++++++++[m[31m----[m
+ src/__pycache__/__init__.cpython-312.pyc           | Bin [31m0[m -> [32m161[m bytes
+ src/main.py                                        |  65 [32m+++++++++++++++++++++[m
+ src/modules/__pycache__/ascii_art.cpython-312.pyc  | Bin [31m0[m -> [32m4580[m bytes
+ src/modules/__pycache__/narrative.cpython-312.pyc  | Bin [31m0[m -> [32m880[m bytes
+ src/modules/ascii_art.py                           |  14 [32m+++[m[31m--[m
+ .../menus/__pycache__/welcome_menu.cpython-312.pyc | Bin [31m0[m -> [32m1798[m bytes
+ src/modules/narrative.py                           |  13 [32m+++++[m
+ 11 files changed, 153 insertions(+), 17 deletions(-)
+
+[33mcommit 8f1a536985a5a2e860b243773cb5474d690fea84[m
+Author: AdrielCareglio <adrielcaregliodev@gmail.com>
+Date:   Sat Mar 1 17:07:12 2025 +0100
+
+    Feature: Welcome menu with four options, including game start and exit from program
+
+ src/modules/menus/main_menu.py    |  0
+ src/modules/menus/welcome_menu.py | 43 [32m+++++++++++++++++++++++++++++++++++++++[m
+ 2 files changed, 43 insertions(+)
+
+[33mcommit da8a201c6d34320b35f8acb15c8f402e645fea19[m[33m ([m[1;32mfeature/context[m[33m)[m
+Author: AdrielCareglio <adrielcaregliodev@gmail.com>
+Date:   Sat Mar 1 13:36:49 2025 +0100
+
+    Update narrative.py with new changes
+
+ src/modules/narrative.py | 11 [32m+++++++++++[m
+ 1 file changed, 11 insertions(+)
+
+[33mcommit f3c44fecc83ac75f2c0a2dfc9b687960bfa2ec31[m
+Author: AdrielCareglio <adrielcaregliodev@gmail.com>
+Date:   Sat Mar 1 13:31:19 2025 +0100
+
+    Feature: Creating basic ascii art for the game narrative
+
+ src/modules/ascii_art.py       | 93 [32m++++++++++++++++++++++++++++++++++++++++++[m
+ src/modules/menus/main_menu.py |  0
+ src/modules/narrative.py       |  0
+ 3 files changed, 93 insertions(+)
+
+[33mcommit 7712e38ae7382c257257b3911ac3ea0c08e29c44[m
+Author: AdrielCareglio <adrielcaregliodev@gmail.com>
+Date:   Fri Feb 28 13:15:24 2025 +0100
+
+    Initial project structure: src, tests, utils, modules
+
+ .idea/.gitignore                                   |    0
+ .idea/BioPetPy.iml                                 |    0
+ .idea/inspectionProfiles/profiles_settings.xml     |    0
+ .idea/misc.xml                                     |    0
+ .idea/modules.xml                                  |    0
+ .../shelved.patch                                  |  250 [32m+[m
+ .../shelved.patch                                  |    0
+ ...before_Update_at_28_02_2025_12_09__Changes_.xml |    4 [32m+[m
+ .idea/vcs.xml                                      |    0
+ .idea/workspace.xml                                |   67 [32m+[m
+ LICENSE                                            |    1 [32m+[m
+ src/__init__.py                                    |    0
+ src/main.py                                        |    0
+ src/modules/logic.py                               |    0
+ src/utils/helpers.py                               |    0
+ tests/test_main.py                                 |    0
+ .../site-packages/pip-25.0.1.dist-info/AUTHORS.txt |  806 [32m++[m
+ .../site-packages/pip-25.0.1.dist-info/INSTALLER   |    1 [32m+[m
+ .../site-packages/pip-25.0.1.dist-info/LICENSE.txt |   20 [32m+[m
+ .../site-packages/pip-25.0.1.dist-info/METADATA    |   90 [32m+[m
+ venv/Lib/site-packages/pip-25.0.1.dist-info/RECORD |  854 [32m++[m
+ .../site-packages/pip-25.0.1.dist-info/REQUESTED   |    0
+ venv/Lib/site-packages/pip-25.0.1.dist-info/WHEEL  |    5 [32m+[m
+ .../pip-25.0.1.dist-info/entry_points.txt          |    3 [32m+[m
+ .../pip-25.0.1.dist-info/top_level.txt             |    1 [32m+[m
+ venv/Lib/site-packages/pip/__init__.py             |   13 [32m+[m
+ venv/Lib/site-packages/pip/__main__.py             |   24 [32m+[m
+ venv/Lib/site-packages/pip/__pip-runner__.py       |   50 [32m+[m
+ .../pip/__pycache__/__init__.cpython-312.pyc       |  Bin [31m0[m -> [32m695[m bytes
+ .../pip/__pycache__/__main__.cpython-312.pyc       |  Bin [31m0[m -> [32m849[m bytes
+ .../pip/__pycache__/__pip-runner__.cpython-312.pyc |  Bin [31m0[m -> [32m2212[m bytes
+ venv/Lib/site-packages/pip/_internal/__init__.py   |   18 [32m+[m
+ .../_internal/__pycache__/__init__.cpython-312.pyc |  Bin [31m0[m -> [32m795[m bytes
+ .../__pycache__/build_env.cpython-312.pyc          |  Bin [31m0[m -> [32m14823[m bytes
+ .../_internal/__pycache__/cache.cpython-312.pyc    |  Bin [31m0[m -> [32m12673[m bytes
+ .../__pycache__/configuration.cpython-312.pyc      |  Bin [31m0[m -> [32m17673[m bytes
+ .../__pycache__/exceptions.cpython-312.pyc         |  Bin [31m0[m -> [32m36881[m bytes
+ .../pip/_internal/__pycache__/main.cpython-312.pyc |  Bin [31m0[m -> [32m678[m bytes
+ .../__pycache__/pyproject.cpython-312.pyc          |  Bin [31m0[m -> [32m5137[m bytes
+ .../self_outdated_check.cpython-312.pyc            |  Bin [31m0[m -> [32m10425[m bytes
+ .../__pycache__/wheel_builder.cpython-312.pyc      |  Bin [31m0[m -> [32m13646[m bytes
+ venv/Lib/site-packages/pip/_internal/build_env.py  |  322 [32m+[m
+ venv/Lib/site-packages/pip/_internal/cache.py      |  290 [32m+[m
+ .../site-packages/pip/_internal/cli/__init__.py    |    4 [32m+[m
+ .../cli/__pycache__/__init__.cpython-312.pyc       |  Bin [31m0[m -> [32m286[m bytes
+ .../cli/__pycache__/autocompletion.cpython-312.pyc |  Bin [31m0[m -> [32m8640[m bytes
+ .../cli/__pycache__/base_command.cpython-312.pyc   |  Bin [31m0[m -> [32m10527[m bytes
+ .../cli/__pycache__/cmdoptions.cpython-312.pyc     |  Bin [31m0[m -> [32m30412[m bytes
+ .../__pycache__/command_context.cpython-312.pyc    |  Bin [31m0[m -> [32m1789[m bytes
+ .../cli/__pycache__/index_command.cpython-312.pyc  |  Bin [31m0[m -> [32m7200[m bytes
+ .../_internal/cli/__pycache__/main.cpython-312.pyc |  Bin [31m0[m -> [32m2308[m bytes
+ .../cli/__pycache__/main_parser.cpython-312.pyc    |  Bin [31m0[m -> [32m4913[m bytes
+ .../cli/__pycache__/parser.cpython-312.pyc         |  Bin [31m0[m -> [32m15101[m bytes
+ .../cli/__pycache__/progress_bars.cpython-312.pyc  |  Bin [31m0[m -> [32m3881[m bytes
+ .../cli/__pycache__/req_command.cpython-312.pyc    |  Bin [31m0[m -> [32m12283[m bytes
+ .../cli/__pycache__/spinners.cpython-312.pyc       |  Bin [31m0[m -> [32m7848[m bytes
+ .../cli/__pycache__/status_codes.cpython-312.pyc   |  Bin [31m0[m -> [32m383[m bytes
+ .../pip/_internal/cli/autocompletion.py            |  176 [32m+[m
+ .../pip/_internal/cli/base_command.py              |  240 [32m+[m
+ .../site-packages/pip/_internal/cli/cmdoptions.py  | 1075 [32m+++[m
+ .../pip/_internal/cli/command_context.py           |   27 [32m+[m
+ .../pip/_internal/cli/index_command.py             |  171 [32m+[m
+ venv/Lib/site-packages/pip/_internal/cli/main.py   |   80 [32m+[m
+ .../site-packages/pip/_internal/cli/main_parser.py |  134 [32m+[m
+ venv/Lib/site-packages/pip/_internal/cli/parser.py |  294 [32m+[m
+ .../pip/_internal/cli/progress_bars.py             |   94 [32m+[m
+ .../site-packages/pip/_internal/cli/req_command.py |  329 [32m+[m
+ .../site-packages/pip/_internal/cli/spinners.py    |  159 [32m+[m
+ .../pip/_internal/cli/status_codes.py              |    6 [32m+[m
+ .../pip/_internal/commands/__init__.py             |  132 [32m+[m
+ .../commands/__pycache__/__init__.cpython-312.pyc  |  Bin [31m0[m -> [32m4010[m bytes
+ .../commands/__pycache__/cache.cpython-312.pyc     |  Bin [31m0[m -> [32m9946[m bytes
+ .../commands/__pycache__/check.cpython-312.pyc     |  Bin [31m0[m -> [32m2624[m bytes
+ .../__pycache__/completion.cpython-312.pyc         |  Bin [31m0[m -> [32m5200[m bytes
+ .../__pycache__/configuration.cpython-312.pyc      |  Bin [31m0[m -> [32m13220[m bytes
+ .../commands/__pycache__/debug.cpython-312.pyc     |  Bin [31m0[m -> [32m10122[m bytes
+ .../commands/__pycache__/download.cpython-312.pyc  |  Bin [31m0[m -> [32m7516[m bytes
+ .../commands/__pycache__/freeze.cpython-312.pyc    |  Bin [31m0[m -> [32m4398[m bytes
+ .../commands/__pycache__/hash.cpython-312.pyc      |  Bin [31m0[m -> [32m2991[m bytes
+ .../commands/__pycache__/help.cpython-312.pyc      |  Bin [31m0[m -> [32m1681[m bytes
+ .../commands/__pycache__/index.cpython-312.pyc     |  Bin [31m0[m -> [32m6684[m bytes
+ .../commands/__pycache__/inspect.cpython-312.pyc   |  Bin [31m0[m -> [32m3984[m bytes
+ .../commands/__pycache__/install.cpython-312.pyc   |  Bin [31m0[m -> [32m29149[m bytes
+ .../commands/__pycache__/list.cpython-312.pyc      |  Bin [31m0[m -> [32m15776[m bytes
+ .../commands/__pycache__/search.cpython-312.pyc    |  Bin [31m0[m -> [32m7553[m bytes
+ .../commands/__pycache__/show.cpython-312.pyc      |  Bin [31m0[m -> [32m10960[m bytes
+ .../commands/__pycache__/uninstall.cpython-312.pyc |  Bin [31m0[m -> [32m4741[m bytes
+ .../commands/__pycache__/wheel.cpython-312.pyc     |  Bin [31m0[m -> [32m8883[m bytes
+ .../site-packages/pip/_internal/commands/cache.py  |  228 [32m+[m
+ .../site-packages/pip/_internal/commands/check.py  |   67 [32m+[m
+ .../pip/_internal/commands/completion.py           |  130 [32m+[m
+ .../pip/_internal/commands/configuration.py        |  280 [32m+[m
+ .../site-packages/pip/_internal/commands/debug.py  |  201 [32m+[m
+ .../pip/_internal/commands/download.py             |  146 [32m+[m
+ .../site-packages/pip/_internal/commands/freeze.py |  109 [32m+[m
+ .../site-packages/pip/_internal/commands/hash.py   |   59 [32m+[m
+ .../site-packages/pip/_internal/commands/help.py   |   41 [32m+[m
+ .../site-packages/pip/_internal/commands/index.py  |  139 [32m+[m
+ .../pip/_internal/commands/inspect.py              |   92 [32m+[m
+ .../pip/_internal/commands/install.py              |  784 [32m++[m
+ .../site-packages/pip/_internal/commands/list.py   |  375 [32m+[m
+ .../site-packages/pip/_internal/commands/search.py |  172 [32m+[m
+ .../site-packages/pip/_internal/commands/show.py   |  224 [32m+[m
+ .../pip/_internal/commands/uninstall.py            |  114 [32m+[m
+ .../site-packages/pip/_internal/commands/wheel.py  |  182 [32m+[m
+ .../site-packages/pip/_internal/configuration.py   |  383 [32m+[m
+ .../pip/_internal/distributions/__init__.py        |   21 [32m+[m
+ .../__pycache__/__init__.cpython-312.pyc           |  Bin [31m0[m -> [32m949[m bytes
+ .../distributions/__pycache__/base.cpython-312.pyc |  Bin [31m0[m -> [32m2901[m bytes
+ .../__pycache__/installed.cpython-312.pyc          |  Bin [31m0[m -> [32m1708[m bytes
+ .../__pycache__/sdist.cpython-312.pyc              |  Bin [31m0[m -> [32m8490[m bytes
+ .../__pycache__/wheel.cpython-312.pyc              |  Bin [31m0[m -> [32m2289[m bytes
+ .../pip/_internal/distributions/base.py            |   53 [32m+[m
+ .../pip/_internal/distributions/installed.py       |   29 [32m+[m
+ .../pip/_internal/distributions/sdist.py           |  158 [32m+[m
+ .../pip/_internal/distributions/wheel.py           |   42 [32m+[m
+ venv/Lib/site-packages/pip/_internal/exceptions.py |  809 [32m++[m
+ .../site-packages/pip/_internal/index/__init__.py  |    2 [32m+[m
+ .../index/__pycache__/__init__.cpython-312.pyc     |  Bin [31m0[m -> [32m240[m bytes
+ .../index/__pycache__/collector.cpython-312.pyc    |  Bin [31m0[m -> [32m21633[m bytes
+ .../__pycache__/package_finder.cpython-312.pyc     |  Bin [31m0[m -> [32m41407[m bytes
+ .../index/__pycache__/sources.cpython-312.pyc      |  Bin [31m0[m -> [32m12548[m bytes
+ .../site-packages/pip/_internal/index/collector.py |  494 [32m++[m
+ .../pip/_internal/index/package_finder.py          | 1029 [32m+++[m
+ .../site-packages/pip/_internal/index/sources.py   |  284 [32m+[m
+ .../pip/_internal/locations/__init__.py            |  456 [32m+[m
+ .../locations/__pycache__/__init__.cpython-312.pyc |  Bin [31m0[m -> [32m16459[m bytes
+ .../__pycache__/_distutils.cpython-312.pyc         |  Bin [31m0[m -> [32m6803[m bytes
+ .../__pycache__/_sysconfig.cpython-312.pyc         |  Bin [31m0[m -> [32m8041[m bytes
+ .../locations/__pycache__/base.cpython-312.pyc     |  Bin [31m0[m -> [32m3789[m bytes
+ .../pip/_internal/locations/_distutils.py          |  172 [32m+[m
+ .../pip/_internal/locations/_sysconfig.py          |  214 [32m+[m
+ .../site-packages/pip/_internal/locations/base.py  |   81 [32m+[m
+ venv/Lib/site-packages/pip/_internal/main.py       |   12 [32m+[m
+ .../pip/_internal/metadata/__init__.py             |  128 [32m+[m
+ .../metadata/__pycache__/__init__.cpython-312.pyc  |  Bin [31m0[m -> [32m5888[m bytes
+ .../metadata/__pycache__/_json.cpython-312.pyc     |  Bin [31m0[m -> [32m2979[m bytes
+ .../metadata/__pycache__/base.cpython-312.pyc      |  Bin [31m0[m -> [32m35232[m bytes
+ .../__pycache__/pkg_resources.cpython-312.pyc      |  Bin [31m0[m -> [32m16113[m bytes
+ .../site-packages/pip/_internal/metadata/_json.py  |   86 [32m+[m
+ .../site-packages/pip/_internal/metadata/base.py   |  688 [32m++[m
+ .../pip/_internal/metadata/importlib/__init__.py   |    6 [32m+[m
+ .../importlib/__pycache__/__init__.cpython-312.pyc |  Bin [31m0[m -> [32m366[m bytes
+ .../importlib/__pycache__/_compat.cpython-312.pyc  |  Bin [31m0[m -> [32m4499[m bytes
+ .../importlib/__pycache__/_dists.cpython-312.pyc   |  Bin [31m0[m -> [32m12895[m bytes
+ .../importlib/__pycache__/_envs.cpython-312.pyc    |  Bin [31m0[m -> [32m11151[m bytes
+ .../pip/_internal/metadata/importlib/_compat.py    |   85 [32m+[m
+ .../pip/_internal/metadata/importlib/_dists.py     |  228 [32m+[m
+ .../pip/_internal/metadata/importlib/_envs.py      |  189 [32m+[m
+ .../pip/_internal/metadata/pkg_resources.py        |  301 [32m+[m
+ .../site-packages/pip/_internal/models/__init__.py |    2 [32m+[m
+ .../models/__pycache__/__init__.cpython-312.pyc    |  Bin [31m0[m -> [32m274[m bytes
+ .../models/__pycache__/candidate.cpython-312.pyc   |  Bin [31m0[m -> [32m1612[m bytes
+ .../models/__pycache__/direct_url.cpython-312.pyc  |  Bin [31m0[m -> [32m10847[m bytes
+ .../__pycache__/format_control.cpython-312.pyc     |  Bin [31m0[m -> [32m4235[m bytes
+ .../models/__pycache__/index.cpython-312.pyc       |  Bin [31m0[m -> [32m1702[m bytes
+ .../installation_report.cpython-312.pyc            |  Bin [31m0[m -> [32m2280[m bytes
+ .../models/__pycache__/link.cpython-312.pyc        |  Bin [31m0[m -> [32m26978[m bytes
+ .../models/__pycache__/scheme.cpython-312.pyc      |  Bin [31m0[m -> [32m1031[m bytes
+ .../__pycache__/search_scope.cpython-312.pyc       |  Bin [31m0[m -> [32m5004[m bytes
+ .../__pycache__/selection_prefs.cpython-312.pyc    |  Bin [31m0[m -> [32m1859[m bytes
+ .../__pycache__/target_python.cpython-312.pyc      |  Bin [31m0[m -> [32m4962[m bytes
+ .../models/__pycache__/wheel.cpython-312.pyc       |  Bin [31m0[m -> [32m6580[m bytes
+ .../pip/_internal/models/candidate.py              |   25 [32m+[m
+ .../pip/_internal/models/direct_url.py             |  224 [32m+[m
+ .../pip/_internal/models/format_control.py         |   78 [32m+[m
+ .../site-packages/pip/_internal/models/index.py    |   28 [32m+[m
+ .../pip/_internal/models/installation_report.py    |   56 [32m+[m
+ .../Lib/site-packages/pip/_internal/models/link.py |  604 [32m++[m
+ .../site-packages/pip/_internal/models/scheme.py   |   25 [32m+[m
+ .../pip/_internal/models/search_scope.py           |  127 [32m+[m
+ .../pip/_internal/models/selection_prefs.py        |   53 [32m+[m
+ .../pip/_internal/models/target_python.py          |  121 [32m+[m
+ .../site-packages/pip/_internal/models/wheel.py    |  118 [32m+[m
+ .../pip/_internal/network/__init__.py              |    2 [32m+[m
+ .../network/__pycache__/__init__.cpython-312.pyc   |  Bin [31m0[m -> [32m262[m bytes
+ .../network/__pycache__/auth.cpython-312.pyc       |  Bin [31m0[m -> [32m22116[m

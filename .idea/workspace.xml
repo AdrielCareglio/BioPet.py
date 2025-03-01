@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d22f7ce4-8d88-4034-8fdd-8e784fff4e22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/cat_selection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/colors_and_formats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/ascii_art.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/ascii_art.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/menus/welcome_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/menus/welcome_menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/narrative.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/narrative.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,17 +36,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.ascii_art.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main.py.executor": "Run",
-    "Python.welcome_menu.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "C:/Users/Adriel/OneDrive/Desktop/Python/Colors&Format.py"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.ascii_art.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.welcome_menu.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adriel/OneDrive/Desktop/Python/Colors&amp;Format.py&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main.py" type="PythonConfigurationType" factoryName="Python">
       <module name="BioPetPy" />
