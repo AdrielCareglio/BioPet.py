@@ -1,15 +1,17 @@
 """Class to store and display ASCII art with colors."""
 
+from src.main import YELLOW, RESET, GREEN, BLUE
+
+
+
 class Ascii_Art:
 
-    def __init__(self, RESET, BLUE, GREEN):
-        self.RESET = RESET
-        self.BLUE = BLUE
-        self.GREEN = GREEN
+
+
 
     def logo(self):
         """Prints the game logo with ANSI colors."""
-        logo_ascii = rf"""{self.RESET}
+        logo_ascii = rf"""{RESET}
                   ____   _         _____        _        
                  |  _ \ (_)       |  __ \      | |       
                  | |_) | _   ___  | |__) | ___ | |_      
@@ -20,7 +22,7 @@ class Ascii_Art:
            {self.BLUE}/\_,,_/\{self.RESET}                                  {self.GREEN}/\./\
           {self.BLUE}( =  0.0 )={self.RESET}                              {self.GREEN}= (0.0) =
           {self.BLUE}/  ||  ||\{self.RESET}                                 {self.GREEN}>^~^<
-         {self.BLUE}/   V   V  \?{self.RESET}                               {self.GREEN}(| |)?
+         {self.BLUE}/   V   V  \?{self.RESET}                               {self.GREEN}(| |)?{self.RESET} 
         """
         print(logo_ascii)
 
