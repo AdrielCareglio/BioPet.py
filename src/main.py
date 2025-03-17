@@ -19,13 +19,17 @@ def main():
     ascii_obj.logo()
 
     #Welcome menu
-    welcome_menu.main_menu()
+    active_game = welcome_menu.main_menu()
 
-    narrative_obj = Narrative()
-    narrative_obj.play_story()
+    if not active_game:
+        print("")
+        return
+    else:
+        narrative_obj = Narrative()
+        narrative_obj.play_story()
 
-    cat_selection_obj = Cats()
-    cat_selection_obj.cat_sel()
+        cat_selection_obj = Cats()
+        cat_selection_obj.cat_sel()
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ Welcome Menu.
 This is the second element that the user encounters after the logo, with which they can interact.
 This menu presents various options, including entering the game and exiting the program.
 """
+
 from src.modules.colors_and_formats import YELLOW, RESET
 
 def main_menu():
@@ -10,6 +11,7 @@ def main_menu():
 
     active_selection = True
     active_game = False
+    start_game = True
 
     while active_selection:
         try:
@@ -42,3 +44,8 @@ def main_menu():
 
         except ValueError:
             print(f"\n{YELLOW}Invalid input! Please enter a number between 1 and 4.{RESET}")
+
+    if (active_game == True) and (active_selection == False):
+        return start_game
+
+
