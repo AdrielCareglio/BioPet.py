@@ -7,6 +7,7 @@ It runs the game flow, coordinates user interaction, narrative, and minigames.
 from modules.ascii_art import Ascii_Art
 from modules.menus import welcome_menu
 from src.modules.narrative import Narrative
+from src.modules.cat_selection import Cats
 
 # ------ Global variables  ------
 
@@ -22,6 +23,9 @@ def main():
 
     narrative_obj = Narrative()
     narrative_obj.play_story()
+
+    cat_selection_obj = Cats()
+    cat_selection_obj.cat_sel()
 
 
 if __name__ == "__main__":
