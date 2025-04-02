@@ -15,6 +15,7 @@ CYAN = "\033[36m"
 WHITE = "\033[37m"
 
 # Text styles
+ITALICA = "\033[3m"
 BOLD = "\033[1m"
 UNDERLINE = "\033[4m"
 BLINKING = "\033[5m"
