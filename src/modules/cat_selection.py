@@ -22,12 +22,12 @@ class Cats:
                         chosen_cat = "Ragnar"
                         active = True
                     case _:
-                        raise ValueError  # Si no es "h" o "r", lanza error
+                        raise ValueError  # If the input is different to r or h, error
             except ValueError:
                 print("Invalid input. Please try again. Type H or R and press 'Enter'")
-                self.cat_input = input().lower()  # Se vuelve a pedir la entrada
+                self.cat_input = input().lower()  # Asks for a new input
 
-        return chosen_cat  # Se devuelve la elección válida
+        return chosen_cat
 
     def opposite_cat(self):
         if self.cat_input == "h":
