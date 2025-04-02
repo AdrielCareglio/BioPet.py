@@ -1,9 +1,12 @@
 class Cats:
-    def __init__(self):
+    def __init__(self, LIVES):
         self.cat_input = None
+        self.lives = LIVES
+
 
     def cat_sel(self):
         self.cat_input = input("Which of the cats will you try it out with? Type H for Hecate or R for Ragnar and press 'Enter': ").lower()
+
         active = False
         chosen_cat = None
 
@@ -11,11 +14,11 @@ class Cats:
             try:
                 match self.cat_input:
                     case "h":
-                        print("It worked! You are now on Hecate´s body and mind")
+                        print(f"It worked! You are now on Hecate´s body and mind. You have {self.lives} lives, good luck Hecate! ")
                         chosen_cat = "Hecate"
                         active = True
                     case "r":
-                        print("It worked! You are now on Ragnar´s body and mind")
+                        print(f"It worked! You are now on Ragnar´s body and mind.  You have {self.lives} lives, good luck Ragnar! ")
                         chosen_cat = "Ragnar"
                         active = True
                     case _:

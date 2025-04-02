@@ -10,6 +10,7 @@ from src.modules.narrative import Narrative
 from src.modules.cat_selection import Cats
 
 # ------ Global variables  ------
+LIVES = 9
 
 
 # ------ MAIN ------
@@ -28,7 +29,7 @@ def main():
         narrative_obj = Narrative()
         narrative_obj.play_story()
 
-        cat_selection_obj = Cats()
+        cat_selection_obj = Cats(LIVES)
         cat_selection_obj.cat_sel()
 
 
