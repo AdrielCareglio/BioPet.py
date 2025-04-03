@@ -7,9 +7,11 @@ It runs the game flow, coordinates user interaction, narrative, and minigames.
 from modules.ascii_art import Ascii_Art
 from modules.menus import welcome_menu
 from src.modules.colors_and_formats import YELLOW, RESET, ITALICA
+from src.modules.menus.minigames_menu import games_menu
 from src.modules.narrative import Narrative
 from src.modules.cat_selection import Cats
 from src.modules.cat_colors import Cats_Colors
+from src.modules.menus import minigames_menu
 
 
 # ------ Global variables  ------
@@ -47,6 +49,9 @@ def main():
         print(f"{YELLOW}Both cats were asleep together. You leaped up in {m_cat_color}{chosen_cat}´s{YELLOW} body and { op_cat} got scared. {RESET}\n")
 
         print(f" {ITALICA}{op_cat_color} -{op_cat}: Meow, you nearly made my heart stop {chosen_cat}! But well, it´s still time to wake up. *stretches*. Where do you want to go?{RESET}")
+
+        #Minigames menu
+        games_menu()
 
 
 if __name__ == "__main__":
