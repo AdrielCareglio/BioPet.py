@@ -28,17 +28,22 @@ def main():
     if not active_game:
         print("")
         return
+    #Game start
     else:
+        #Intro narrative
         narrative_obj = Narrative()
         narrative_obj.play_story()
 
+        #User chooses the character to play with
         cat_selection_obj = Cats(LIVES)
         chosen_cat = cat_selection_obj.cat_sel()
         op_cat = cat_selection_obj.opposite_cat()
 
+        #Sets text color according to character
         cat_colors_obj = Cats_Colors(chosen_cat, op_cat)
         m_cat_color = cat_colors_obj.main_cat_color(chosen_cat)
         op_cat_color = cat_colors_obj.op_cat_color(op_cat)
+
         print(f"{YELLOW}Both cats were asleep together. You leaped up in {m_cat_color}{chosen_cat}´s{YELLOW} body and { op_cat} got scared. {RESET}\n")
 
         print(f" {ITALICA}{op_cat_color} -{op_cat}: Meow, you nearly made my heart stop {chosen_cat}! But well, it´s still time to wake up. *stretches*. Where do you want to go?{RESET}")
