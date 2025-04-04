@@ -1,3 +1,5 @@
+from src.modules.colors_and_formats import RED
+
 class Cats:
     def __init__(self, LIVES):
         self.cat_input = None
@@ -24,7 +26,7 @@ class Cats:
                     case _:
                         raise ValueError  # If the input is different to r or h, error
             except ValueError:
-                print("Invalid input. Please try again. Type H or R and press 'Enter'")
+                print(f"{RED}Invalid input. Please try again. Type H or R and press 'Enter'")
                 self.cat_input = input().lower()  # Asks for a new input
 
         return chosen_cat

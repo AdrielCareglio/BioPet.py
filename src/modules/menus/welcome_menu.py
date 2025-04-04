@@ -4,7 +4,7 @@ This is the second element that the user encounters after the logo, with which t
 This menu presents various options, including entering the game and exiting the program.
 """
 
-from src.modules.colors_and_formats import YELLOW, RESET
+from src.modules.colors_and_formats import YELLOW, RESET, RED
 
 def main_menu():
     print("Welcome to the 'BioPet' game. This is the main menu:")
@@ -40,10 +40,10 @@ def main_menu():
                     active_selection = False
 
                 case _:
-                    print(f"\n{YELLOW}Invalid option! Please choose a number between 1 and 4.{RESET}")
+                    print(f"\n{RED}Invalid option! Please choose a number between 1 and 4.{RESET}")
 
         except ValueError:
-            print(f"\n{YELLOW}Invalid input! Please enter a number between 1 and 4.{RESET}")
+            print(f"\n{RED}Invalid input! Please enter a number between 1 and 4.{RESET}")
 
     if (active_game == True) and (active_selection == False):
         return start_game

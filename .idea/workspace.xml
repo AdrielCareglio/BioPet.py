@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d22f7ce4-8d88-4034-8fdd-8e784fff4e22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/mini_games/recliner_scratcher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/cat_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/cat_selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/menus/welcome_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/menus/welcome_menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
     &quot;Python.welcome_menu.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adriel/OneDrive/Desktop/Python/Colors&amp;Format.py&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adriel/OneDrive/Desktop/Varios/FP/Entregas Videojuego/Careglio1.3/Videojuego1.3_AdrielCareglio/Videojuego1.3_AdrielCareglio/src&quot;
   }
 }</component>
   <component name="RunManager">

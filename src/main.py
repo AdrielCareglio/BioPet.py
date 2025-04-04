@@ -11,7 +11,6 @@ from src.modules.menus.minigames_menu import games_menu
 from src.modules.narrative import Narrative
 from src.modules.cat_selection import Cats
 from src.modules.cat_colors import Cats_Colors
-from src.modules.menus import minigames_menu
 
 
 # ------ Global variables  ------
@@ -55,4 +54,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
