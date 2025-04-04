@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d22f7ce4-8d88-4034-8fdd-8e784fff4e22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/shared/state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/cat_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/cat_selection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/menus/minigames_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/menus/minigames_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/menus/welcome_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/menus/welcome_menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/mini_games/recliner_scratcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mini_games/recliner_scratcher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
