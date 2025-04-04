@@ -5,6 +5,8 @@ This menu presents various options, including entering the game and exiting the 
 """
 
 from src.modules.colors_and_formats import YELLOW, RESET, RED
+from src.modules.shared.state import state
+
 
 def main_menu():
     print("Welcome to the 'BioPet' game. This is the main menu:")

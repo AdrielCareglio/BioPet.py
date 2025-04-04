@@ -1,7 +1,9 @@
 """Class for choosing the minigame to participate in according to the chosen room or action"""
 from src.modules.colors_and_formats import RESET, RED, YELLOW
+from src.modules.mini_games.recliner_scratcher import scratcher_game
+from src.modules.shared.state import state
 
-def games_menu():
+def games_menu(chosen_cat, op_cat, m_cat_color, op_cat_color):
 
     active_menu = True
 
@@ -13,7 +15,7 @@ def games_menu():
 
             match action_input:
                 case 1:
-                    print("Living room")
+                    state.lives_left = scratcher_game(chosen_cat, op_cat, m_cat_color, op_cat_color)
                     active_menu = False
                 case 2:
                     print("Hallway")

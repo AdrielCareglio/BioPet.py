@@ -11,11 +11,7 @@ from src.modules.menus.minigames_menu import games_menu
 from src.modules.narrative import Narrative
 from src.modules.cat_selection import Cats
 from src.modules.cat_colors import Cats_Colors
-
-
-# ------ Global variables  ------
-LIVES = 9
-
+from src.modules.shared.state import state
 
 # ------ MAIN ------
 def main():
@@ -36,7 +32,7 @@ def main():
         narrative_obj.play_story()
 
         #User chooses the character to play with
-        cat_selection_obj = Cats(LIVES)
+        cat_selection_obj = Cats()
         chosen_cat = cat_selection_obj.cat_sel()
         op_cat = cat_selection_obj.opposite_cat()
 
@@ -50,9 +46,8 @@ def main():
         print(f" {ITALICA}{op_cat_color} -{op_cat}: Meow, you nearly made my heart stop {chosen_cat}! But well, it´s still time to wake up. *stretches*. Where do you want to go?{RESET}")
 
         #Minigames menu
-        games_menu()
+        games_menu(chosen_cat, op_cat, m_cat_color, op_cat_color)
 
 
 if __name__ == "__main__":
-
     main()

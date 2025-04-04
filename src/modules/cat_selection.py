@@ -1,9 +1,11 @@
 from src.modules.colors_and_formats import RED
+from src.modules.shared.state import state
+
 
 class Cats:
-    def __init__(self, LIVES):
+    def __init__(self):
         self.cat_input = None
-        self.lives = LIVES
+        self.lives = state.lives_left
 
 
     def cat_sel(self):
